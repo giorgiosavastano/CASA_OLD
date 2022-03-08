@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "casa"
+version = "0.1.0"
+description = "Python package to perform unsupervised and semi-supervised machine learning (ML) classification algorithms on generic tensors of pre-processed data"
+authors = ["Giorgio Savastano <giorgio.savastano@uniroma1.it>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.22.3"
+scipy = "^1.8.0"
+scikit-learn = "^1.0.2"
+Pebble = "^4.6.3"
+progress = "^1.6"
+seaborn = "^0.11.2"
+
+[tool.poetry.dev-dependencies]
+pytest = "^7.0.1"
+coverage = "^6.3.2"
+pre-commit = "^2.17.0"
+Sphinx = "^4.4.0"
+sphinx-rtd-theme = "^1.0.0"
+zarr = "^2.11.1"
+pytest-cov = "^3.0.0"
+s3fs = "^2022.2.0"
+
+[tool.poetry.extras]
+docs = ['sphinx']
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "INFO"
+log_cli_format = "%(asctime)s [%(levelname)8s] %(message)s (%(filename)s:%(lineno)s)"
+log_cli_date_format = "%Y-%m-%d %H:%M:%S"
+testpaths=[
+    "tests"
+]
+markers =[
+    "unit: Unit tests.",
+]
