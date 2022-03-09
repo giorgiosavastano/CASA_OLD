@@ -30,12 +30,12 @@ It includes the following blocks:
 
     pip install casa
 
-## References
-
-Savastano, G., K. Nordström, and M. J. Angling (2022), Semi-supervised Classification of Lower-Ionospheric Perturbations using GNSS Radio Occultation Observations from Spire’s Cubesat Constellation. Submitt. to JSWSC.
- 
 
 ### Authors
 
 - Giorgio Savastano (<giorgiosavastano@gmail.com>)
 - Karl Nordstrom (<karl.nordstrom@spire.com>)
+
+## References
+
+Savastano, G., K. Nordström, and M. J. Angling (2022), Semi-supervised Classification of Lower-Ionospheric Perturbations using GNSS Radio Occultation Observations from Spire’s Cubesat Constellation. Submitt. to JSWSC.
