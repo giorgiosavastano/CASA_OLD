@@ -32,14 +32,36 @@ def compute_earth_mover_dist(first, second):
 
 
 def compute_distance_matrix(matrix_arrays, num_part=-1):
-    """
+    """Compute distance matrix using Dask.
+
+    Author: Giorgio Savastano (giorgiosavastano@gmail.com)
+
+    Parameters
+    ----------
+    matrix_arrays : np.ndarray
+        Matrix of data tensors stored in arrays.
+        Only 1-D or 2-D data tensors allowed
+    num_part : int, optional
+        Number of partitions for Dask bags.
+
     """
     # Get indices for the upper-triangle of matrix array
     indx, indy = np.triu_indices(len(matrix_arrays))
     np_arr = np.zeros((len(matrix_arrays), len(matrix_arrays)))
 
-    arr_1 = matrix_arrays[indx][:, np.newaxis]
-    arr_2 = matrix_arrays[indy][:, np.newaxis]
+    if len(matrix_arrays.shape) == 2:
+        # for a matrix of 1-D data tensors
+        arr_1 = matrix_arrays[indx][:, np.newaxis]
+        arr_2 = matrix_arrays[indy][:, np.newaxis]
+
+    elif len(matrix_arrays.shape) == 3:
+        # for a matrix of 2-D data tensors
+        arr_1 = matrix_arrays[indx][:, np.newaxis]
+        arr_2 = matrix_arrays[indy][:, np.newaxis]
+
+    else:
+        logger.error(" Distance matrix can be compute on 1-D and 2-D data tensors only")
+        raise ValueError
 
     if num_part == -1:
         num_part = int(arr_1.shape[0] / 100)
