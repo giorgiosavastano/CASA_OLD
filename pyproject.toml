@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "casa"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python package to perform unsupervised and semi-supervised machine learning (ML) classification algorithms on generic tensors of pre-processed data"
 authors = ["Giorgio Savastano <giorgio.savastano@uniroma1.it>"]
 license = "MIT"
@@ -13,6 +13,7 @@ scikit-learn = "^1.0.2"
 Pebble = "^4.6.3"
 progress = "^1.6"
 seaborn = "^0.11.2"
+dask = {extras = ["distributed"], version = "^2022.2.1"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0.1"

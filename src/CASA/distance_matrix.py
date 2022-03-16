@@ -56,8 +56,8 @@ def compute_distance_matrix(matrix_arrays, num_part=-1):
 
     elif len(matrix_arrays.shape) == 3:
         # for a matrix of 2-D data tensors
-        arr_1 = matrix_arrays[indx][:, np.newaxis]
-        arr_2 = matrix_arrays[indy][:, np.newaxis]
+        arr_1 = matrix_arrays[indx]
+        arr_2 = matrix_arrays[indy]
 
     else:
         logger.error(" Distance matrix can be compute on 1-D and 2-D data tensors only")
