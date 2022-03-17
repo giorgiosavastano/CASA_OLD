@@ -3,11 +3,8 @@ from unittest import TestCase
 
 import numpy as np
 import pytest
-from dask.distributed import Client
 
 from CASA.distance_matrix import compute_distance_matrix
-
-client = Client(n_workers=4)
 
 path = Path(__file__)
 
@@ -23,5 +20,4 @@ class TestDistMatrix(TestCase):
         self.assertEqual(matrix_arrays.shape[0], dist_matr.shape[0])
 
     def tearDown(self):
-        client.shutdown()
         pass

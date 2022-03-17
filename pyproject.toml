@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "casa"
-version = "0.1.1"
+version = "0.1.2"
 description = "Python package to perform unsupervised and semi-supervised machine learning (ML) classification algorithms on generic tensors of pre-processed data"
 authors = ["Giorgio Savastano <giorgio.savastano@uniroma1.it>"]
 license = "MIT"
