@@ -13,7 +13,6 @@ scikit-learn = "^1.0.2"
 Pebble = "^4.6.3"
 progress = "^1.6"
 seaborn = "^0.11.2"
-dask = {extras = ["distributed"], version = "^2022.2.1"}
 
 [tool.poetry.dev-dependencies]
 pytest = "^7.0.1"
@@ -24,6 +23,7 @@ sphinx-rtd-theme = "^1.0.0"
 zarr = "^2.11.1"
 pytest-cov = "^3.0.0"
 s3fs = "^2022.2.0"
+dask = {extras = ["distributed"], version = "^2022.2.1"}
 
 [tool.poetry.extras]
 docs = ['sphinx']

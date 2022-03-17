@@ -162,7 +162,7 @@ unicode_backport = ["unicodedata2"]
 name = "click"
 version = "8.0.4"
 description = "Composable command line interface toolkit"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -173,7 +173,7 @@ colorama = {version = "*", markers = "platform_system == \"Windows\""}
 name = "cloudpickle"
 version = "2.0.0"
 description = "Extended pickling support for Python objects"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -181,7 +181,7 @@ python-versions = ">=3.6"
 name = "colorama"
 version = "0.4.4"
 description = "Cross-platform colored terminal text."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -211,7 +211,7 @@ python-versions = ">=3.6"
 name = "dask"
 version = "2022.2.1"
 description = "Parallel PyData with Task Scheduling"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -244,7 +244,7 @@ python-versions = "*"
 name = "distributed"
 version = "2022.2.1"
 description = "Distributed scheduler for Dask"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 
@@ -324,7 +324,7 @@ python-versions = ">=3.7"
 name = "fsspec"
 version = "2022.2.0"
 description = "File-system specification"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -354,7 +354,7 @@ ssh = ["paramiko"]
 name = "heapdict"
 version = "1.0.1"
 description = "a heap with decrease-key and increase-key operations"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -413,7 +413,7 @@ python-versions = "*"
 name = "jinja2"
 version = "3.0.3"
 description = "A very fast and expressive template engine."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -451,7 +451,7 @@ python-versions = ">=3.7"
 name = "locket"
 version = "0.2.1"
 description = "File-based locks for Python for Linux and Windows"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -459,7 +459,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "markupsafe"
 version = "2.1.0"
 description = "Safely add untrusted strings to HTML/XML markup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -486,7 +486,7 @@ setuptools_scm = ">=4"
 name = "msgpack"
 version = "1.0.3"
 description = "MessagePack (de)serializer."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -564,7 +564,7 @@ test = ["hypothesis (>=5.5.3)", "pytest (>=6.0)", "pytest-xdist (>=1.31)"]
 name = "partd"
 version = "1.2.0"
 description = "Appendable key-value storage"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -643,7 +643,7 @@ python-versions = "*"
 name = "psutil"
 version = "5.9.0"
 description = "Cross-platform lib for process and system monitoring in Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -736,7 +736,7 @@ python-versions = "*"
 name = "pyyaml"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -856,7 +856,7 @@ python-versions = "*"
 name = "sortedcontainers"
 version = "2.4.0"
 description = "Sorted Containers -- Sorted List, Sorted Dict, Sorted Set"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -982,7 +982,7 @@ test = ["pytest"]
 name = "tblib"
 version = "1.7.0"
 description = "Traceback serialization library."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -1014,7 +1014,7 @@ python-versions = ">=3.7"
 name = "toolz"
 version = "0.11.2"
 description = "List processing tools and functional utilities"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -1022,7 +1022,7 @@ python-versions = ">=3.5"
 name = "tornado"
 version = "6.1"
 description = "Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">= 3.5"
 
@@ -1106,7 +1106,7 @@ jupyter = ["notebook", "ipytree"]
 name = "zict"
 version = "2.1.0"
 description = "Mutable mapping tools"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -1131,7 +1131,7 @@ docs = []
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "f637519871e6d390e910d2fcba73d0cff5264352d95fc552dcd3621d39bfe7a1"
+content-hash = "bdfa0ad8aef83a33b551405bc156260f922ad9068633db9d24755c96ce66e3be"
 
 [metadata.files]
 aiobotocore = [
