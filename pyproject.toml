@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "casa"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python package to perform unsupervised and semi-supervised machine learning (ML) classification algorithms on generic tensors of pre-processed data"
 authors = ["Giorgio Savastano <giorgio.savastano@uniroma1.it>"]
 license = "MIT"
@@ -23,6 +23,7 @@ sphinx-rtd-theme = "^1.0.0"
 zarr = "^2.11.1"
 pytest-cov = "^3.0.0"
 s3fs = "^2022.2.0"
+dask = {extras = ["distributed"], version = "^2022.2.1"}
 
 [tool.poetry.extras]
 docs = ['sphinx']
